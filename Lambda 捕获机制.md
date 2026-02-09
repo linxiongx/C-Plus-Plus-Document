@@ -1,4 +1,4 @@
-### ✅ Lambda 捕获机制（针对上面讨论内容）
+### ✅ Lambda 捕获机制
 
 1. **捕获 this**
 
@@ -7,7 +7,7 @@
 
 2. **捕获初始化（C++14 起）**
 
-   ```
+   ```c++
    [pLog = this->pLog](CString msg) { pLog->ErrorMsg(msg); };
    ```
 
