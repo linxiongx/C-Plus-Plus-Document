@@ -291,7 +291,7 @@ foo(std::make_shared<int>(5), bar());  // ✅ 任何标准都安全
 
 ------
 
-# 5. `make_shared` 的一个缺点（weak_ptr + 内存释放延迟）
+## 5. `make_shared` 的一个缺点（weak_ptr + 内存释放延迟）
 
 因为 `make_shared` 把对象和控制块放在同一块内存中：
 
@@ -307,7 +307,7 @@ foo(std::make_shared<int>(5), bar());  // ✅ 任何标准都安全
 
 ------
 
-# 6. 什么时候用 `make_shared`？
+## 6. 什么时候用 `make_shared`？
 
 ✅ 推荐默认使用：
 
@@ -319,7 +319,7 @@ auto p = std::make_shared<MyClass>(...);
 
 ------
 
-# 7. 什么时候必须用 `shared_ptr(new T)`？
+## 7. 什么时候必须用 `shared_ptr(new T)`？
 
 典型场景：
 
@@ -339,7 +339,7 @@ std::shared_ptr<FILE> fp(fopen("a.txt", "r"), fclose);
 
 ------
 
-# 8. 总结一句话
+## 8. 总结一句话
 
 - `std::shared_ptr` 构造函数：**你给它一个指针，它给你创建控制块**
 - `std::make_shared`：**它帮你创建对象 + 控制块（一次分配），并返回 shared_ptr**

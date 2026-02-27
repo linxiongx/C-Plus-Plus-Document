@@ -1,9 +1,4 @@
-<h1 style="text-align:center; font-size:36px;">
-`swap` 在 `SafeQueue::clear()` 中的作用与意义总结
-</h1>
-
-
-
+# `swap` 在 `SafeQueue::clear()` 中的作用与意义总结
 
 ### 1️⃣ 基本思想
 
